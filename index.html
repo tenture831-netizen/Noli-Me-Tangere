@@ -1,110 +1,201 @@
 <!DOCTYPE html>
-<html lang="tl">
+<html lang="fil">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noli Me Tangere - Educational Platform</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1>Noli Me Tangere</h1>
-                <p class="subtitle">ng Jose Rizal</p>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="talambuhay.html">Talambuhay ng Akda</a></li>
-                <li><a href="tauhan.html">Mga Tauhan</a></li>
-                <li><a href="kabanata.html">Kabanata</a></li>
-                <li><a href="assessment.html">Assessment</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="hero">
-        <div class="hero-content">
-            <h2>Maligayang Pagdating sa</h2>
-            <h1>NOLI ME TANGERE</h1>
-            <p class="hero-subtitle">Isang makasaysayang nobela ni Dr. Jose P. Rizal</p>
-            <p class="hero-description">
-                Tuklasin ang kuwento ng pag-ibig, tagumpay, at pagkakaisa sa pamamagitan ng pinakamahalagang filipiniana
-            </p>
-            <div class="cta-buttons">
-                <a href="talambuhay.html" class="btn btn-primary">Basahin ang Kuwento</a>
-                <a href="kabanata.html" class="btn btn-secondary">Mga Kabanata</a>
+    <!-- Header/Title Section -->
+    <header class="header-section">
+        <div class="vintage-background">
+            <div class="header-content">
+                <h1 class="main-title">Noli Me Tangere</h1>
+                <p class="subtitle">Isang Aklat ni José Rizal</p>
+                <p class="tagline">Tumutulong sa ating Pag-unawa sa Kasaysayan at Kultura</p>
             </div>
         </div>
     </header>
 
-    <section class="content-overview">
-        <div class="container">
-            <div class="section-title">
-                <h2>Ang Noli Me Tangere sa Isang Tingin</h2>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="#video">Kaligiran Pangkasaysayan</a></li>
+            <li><a href="#characters">Mga Tauhan</a></li>
+            <li><a href="#chapters">Mga Kabanata</a></li>
+            <li><a href="#assessment">Assessment</a></li>
+            <li><a href="#vocabulary">Bokabularyo</a></li>
+            <li><a href="#author">Tungkol sa Akda</a></li>
+            <li><a href="#resources">Mga Kagamitan</a></li>
+        </ul>
+    </nav>
+
+    <!-- Video Section -->
+    <section id="video" class="section video-section">
+        <h2>Kaligiran Pangkasaysayan</h2>
+        <div class="video-container">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/" 
+                    title="Kaligiran ng Noli Me Tangere" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+        <p class="video-description">Alamin ang kasaysayan at kahalagahan ng Noli Me Tangere sa ating kultura.</p>
+    </section>
+
+    <!-- Characters Section -->
+    <section id="characters" class="section characters-section">
+        <h2>Mga Pangunahing Tauhan</h2>
+        <div class="characters-grid">
+            <div class="character-card">
+                <img src="images/characters/placeholder.jpg" alt="Character">
+                <h3>Ibigay ang Pangalan</h3>
+                <p>Paglalahad ng papel sa kuwento</p>
+            </div>
+            <!-- Idagdag pa ang iba pang mga tauhan -->
+        </div>
+    </section>
+
+    <!-- Chapters Section -->
+    <section id="chapters" class="section chapters-section">
+        <h2>Mga Kabanata (1-63)</h2>
+        <div class="chapters-container">
+            <!-- Chapter 1 -->
+            <div class="chapter-card" data-chapter="1">
+                <div class="chapter-header">
+                    <h3>Kabanata 1</h3>
+                </div>
+                <div class="chapter-content">
+                    <img src="images/chapters/chapter-1.jpg" alt="Kabanata 1" class="chapter-image">
+                    <div class="chapter-media">
+                        <audio controls>
+                            <source src="audio/chapters/chapter-1.mp3" type="audio/mpeg">
+                            Ang iyong browser ay hindi sumusuporta sa audio element.
+                        </audio>
+                    </div>
+                    <div class="chapter-summary">
+                        <h4>Buod:</h4>
+                        <p>Isulat ang buod ng kabanata dito...</p>
+                    </div>
+                </div>
             </div>
             
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-icon">📖</div>
-                    <h3>Talambuhay ng Akda</h3>
-                    <p>Alamin ang background at konteksto ng nobela</p>
-                    <a href="talambuhay.html">Tuklasin →</a>
-                </div>
+            <!-- Ulitin para sa iba pang mga kabanata (2-63) -->
+            <!-- Template para sa iba pang mga kabanata -->
+        </div>
+    </section>
 
-                <div class="card">
-                    <div class="card-icon">👥</div>
-                    <h3>Mga Tauhan</h3>
-                    <p>Kilalanin ang pangunahing karakteres ng kuwento</p>
-                    <a href="tauhan.html">Tuklasin →</a>
+    <!-- Assessment Section -->
+    <section id="assessment" class="section assessment-section">
+        <h2>Pagsusuri at Aktibidad</h2>
+        
+        <!-- Pre-Test -->
+        <div class="assessment-subsection">
+            <h3>Pre-Test</h3>
+            <form class="assessment-form">
+                <div class="question">
+                    <p>Tanong 1: ?</p>
+                    <input type="text" placeholder="Sagot" required>
                 </div>
+                <!-- Idagdag pa ang iba pang mga tanong -->
+                <button type="submit" class="submit-btn">Ipadala</button>
+            </form>
+        </div>
 
-                <div class="card">
-                    <div class="card-icon">📚</div>
-                    <h3>64 Kabanata</h3>
-                    <p>Basahin ang buod ng bawat kabanata ng nobela</p>
-                    <a href="kabanata.html">Tuklasin →</a>
+        <!-- Formative Assessment -->
+        <div class="assessment-subsection">
+            <h3>Formative Assessment - Repleksyon at Aktibidad</h3>
+            <div class="activity-cards">
+                <div class="activity-card">
+                    <h4>Aktibidad 1</h4>
+                    <p>Ipahayag ang iyong mga saloobin tungkol sa...</p>
+                    <textarea placeholder="Isulat ang iyong sagot dito"></textarea>
                 </div>
+                <!-- Idagdag pa ang iba pang mga aktibidad -->
+            </div>
+        </div>
 
-                <div class="card">
-                    <div class="card-icon">🎯</div>
-                    <h3>Quiz at Assessment</h3>
-                    <p>Subukan ang iyong kaalaman sa nobela</p>
-                    <a href="assessment.html">Simulan →</a>
+        <!-- Post-Test -->
+        <div class="assessment-subsection">
+            <h3>Post-Test</h3>
+            <form class="assessment-form">
+                <div class="question">
+                    <p>Tanong 1: ?</p>
+                    <input type="text" placeholder="Sagot" required>
                 </div>
+                <!-- Idagdag pa ang iba pang mga tanong -->
+                <button type="submit" class="submit-btn">Ipadala</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Vocabulary Section -->
+    <section id="vocabulary" class="section vocabulary-section">
+        <h2>Bokabularyo</h2>
+        <div class="vocabulary-container">
+            <div class="vocab-card">
+                <h4>Salita</h4>
+                <p><strong>Kahulugan:</strong> Ipahayag ang kahulugan dito</p>
+            </div>
+            <!-- Idagdag pa ang iba pang mga salita -->
+        </div>
+    </section>
+
+    <!-- Author & Timeline Section -->
+    <section id="author" class="section author-section">
+        <h2>Tungkol sa Akda at Lumikha</h2>
+        <div class="author-content">
+            <div class="author-info">
+                <img src="images/jose-rizal.jpg" alt="José Rizal" class="author-image">
+                <div class="author-details">
+                    <h3>José Protasio Rizal Mercado y Alonso Realonda</h3>
+                    <p>Ang buhay at mga kontribusyon ni José Rizal...</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <h3>Timeline ng Noli Me Tangere</h3>
+                <div class="timeline-item">
+                    <span class="timeline-date">1887</span>
+                    <span class="timeline-event">Unang edisyon ng Noli Me Tangere</span>
+                </div>
+                <!-- Idagdag pa ang iba pang timeline events -->
             </div>
         </div>
     </section>
 
-    <section class="quick-facts">
-        <div class="container">
-            <h2>Mabilis na Impormasyon</h2>
-            <div class="facts-grid">
-                <div class="fact-box">
-                    <span class="fact-number">64</span>
-                    <p>Mga Kabanata</p>
-                </div>
-                <div class="fact-box">
-                    <span class="fact-number">1887</span>
-                    <p>Taon ng Publikasyon</p>
-                </div>
-                <div class="fact-box">
-                    <span class="fact-number">20+</span>
-                    <p>Pangunahing Tauhan</p>
-                </div>
-                <div class="fact-box">
-                    <span class="fact-number">300+</span>
-                    <p>Pahina</p>
-                </div>
+    <!-- Teacher Resources Section -->
+    <section id="resources" class="section resources-section">
+        <h2>Mga Kagamitan para sa Guro</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>PowerPoint Presentations</h3>
+                <p>Mga presentasyon na maaaring gamitin bilang gabay sa pagtalakay</p>
+                <a href="resources/presentations/" class="resource-link">Tingnan</a>
+            </div>
+            <div class="resource-card">
+                <h3>Mga Worksheets</h3>
+                <p>Mga worksheet para sa mga estudyante</p>
+                <a href="resources/worksheets/" class="resource-link">Tingnan</a>
+            </div>
+            <div class="resource-card">
+                <h3>Lesson Plans</h3>
+                <p>Detalyadong mga plano sa leksyon</p>
+                <a href="resources/lesson-plans/" class="resource-link">Tingnan</a>
+            </div>
+            <div class="resource-card">
+                <h3>Discussion Guides</h3>
+                <p>Mga gabay sa pagtalakay para sa bawat kabanata</p>
+                <a href="resources/guides/" class="resource-link">Tingnan</a>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Noli Me Tangere Educational Platform | Created for Learning</p>
-            <p class="footer-note">Editable content - Magsimula ng pag-edit sa iba't ibang pages</p>
-        </div>
+        <p>&copy; 2026 Noli Me Tangere Educational Platform. Lahat ng karapatan ay nakalaan.</p>
+        <p>Ginawa para sa edukasyon at pag-unlad ng ating kultura</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
